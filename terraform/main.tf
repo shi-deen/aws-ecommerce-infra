@@ -13,7 +13,7 @@ provider "aws" {
 }
 
 ####################
-# Variables
+# Variables accept
 ####################
 variable "region" {
   type    = string
