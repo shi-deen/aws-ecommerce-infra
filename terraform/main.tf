@@ -155,7 +155,7 @@ resource "aws_route_table_association" "public_assoc" {
 ####################
 resource "aws_eip" "nat_eip" {
   count = 3
-  vpc   = true
+  domain = "vpc"
 
   tags = {
     Name = "ecomm-nat-eip-${count.index + 1}"
